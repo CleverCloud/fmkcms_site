@@ -11,6 +11,14 @@
         #{get 'moreScripts' /}
     </head>
     <body>
+        <div>
+            <ul>
+                <li>#{pageLink "index" /}</li>
+                <li>#{pageLink "another_page" /}</li>
+                <li><a href="@{PageController.pagestag("azerty")}">tag azerty</a></li>
+                <li><a href="/admin/">admin</a></li>
+            </ul>
+        </div>
         #{doLayout /}
     </body>
 </html>

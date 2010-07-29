@@ -1,3 +1,4 @@
 tmp/bytecode tmp/classes
 tmp
 nbproject
+test-result
