@@ -17,3 +17,4 @@ GET     /pages/tag/{tagName}                          PageController.pagestag
 # Catch all
 *       /{controller}/{action}                  {controller}.{action}
 *      /admin              module:crud
+*      /                module:secure
