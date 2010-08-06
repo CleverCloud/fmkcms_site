@@ -2,3 +2,5 @@ tmp/bytecode tmp/classes
 tmp
 nbproject
 test-result
+fmkpage
+models.Tag
