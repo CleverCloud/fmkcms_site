@@ -4,6 +4,8 @@
  */
 package controllers;
 
+import controllers.secureStuff.SecureConstants;
+
 /**
  *
  * @author waxzce
@@ -20,10 +22,11 @@ public class Security extends Secure.Security {
     }
 
     static boolean check(String profile) {
+        System.out.println(profile);
         if(profile.equals(SecureConstants.READ_PAGE)){
             return true;
         }else{
-            return !connected().isEmpty();
+            return false;
         }
     }
 }

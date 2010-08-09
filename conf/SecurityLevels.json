@@ -1,0 +1,6 @@
+{
+    "securityLevels":{
+        "MANAGE_PAGE":["CRUD4Pages.*"]
+
+}
+}
