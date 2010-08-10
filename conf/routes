@@ -3,7 +3,7 @@
 # ~~~~
 
 # Home page
-GET     /                                       PageController.page("index")
+GET     /                                       PageController.page(urlId:'index')
 
 GET     /public/                                staticDir:public
 
@@ -14,7 +14,8 @@ GET     /public/                                staticDir:public
 # Map static resources from the /app/public folder to the /public path
 
 # Catch all
-*       /{controller}/{action}                  {controller}.{action}
+
 *      /crud              module:crud
 *      /                module:secure
 *      /                module:fmkcms
+*       /{controller}/{action}                  {controller}.{action}
