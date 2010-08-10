@@ -6,5 +6,9 @@
     {
         name:"READ_PAGE",
         controllers:["PageController.page"]
+    },
+    {
+        name:"APPLICATION_SITE",
+        controllers:["Application.*"]
     }
 ]
