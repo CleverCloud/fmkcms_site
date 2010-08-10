@@ -5,4 +5,4 @@ test-result
 fmkpage/
 logs/
 models.Tag/
-
+*.DS_Store

@@ -4,9 +4,6 @@
  */
 package controllers;
 
-import controllers.secureStuff.SecureConstants;
-import models.SmallUser;
-
 /**
  *
  * @author waxzce
