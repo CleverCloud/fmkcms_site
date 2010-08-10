@@ -3,12 +3,11 @@
 # ~~~~
 
 # Home page
-GET     /                                       Application.index
+GET     /                                       PageController.page("index")
 
 GET     /public/                                staticDir:public
 
-GET     /page/{urlId}                          PageController.page
-GET     /pages/tag/{tagName}                          PageController.pagestag
+
 
 
 
@@ -18,3 +17,4 @@ GET     /pages/tag/{tagName}                          PageController.pagestag
 *       /{controller}/{action}                  {controller}.{action}
 *      /crud              module:crud
 *      /                module:secure
+*      /                module:fmkcms

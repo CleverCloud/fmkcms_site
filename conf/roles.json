@@ -1,6 +1,6 @@
 
 [
     {name:"*",rights_names:["READ_PAGE","APPLICATION_SITE"]},
-    {name:"admin",rights_names:["MANAGE_PAGE"]}
+    {name:"admin",rights_names:["MANAGE_PAGE","ADMIN_CMS"]}
 ]
 

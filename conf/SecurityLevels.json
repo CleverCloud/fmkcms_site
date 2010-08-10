@@ -5,10 +5,14 @@
     },
     {
         name:"READ_PAGE",
-        controllers:["PageController.page"]
+        controllers:["PageController.*"]
     },
     {
         name:"APPLICATION_SITE",
         controllers:["Application.*"]
+    },
+    {
+        name:"ADMIN_CMS",
+        controllers:["AdminCMS.*"]
     }
 ]

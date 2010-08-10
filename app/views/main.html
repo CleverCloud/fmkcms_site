@@ -16,7 +16,7 @@
         #{get 'moreScripts' /}
     </head>
     <body>
-        <h1>Template</h1>
+        <h1>FMKCMS test site</h1>
         <div class="page liquid">
             <div class="head">
                 <h2>Head</h2>
@@ -24,28 +24,21 @@
             </div>
             <div class="body">
                 <div class="leftCol">
-                    <h2>Left Column</h2>
-                    <p>Left column is 250px by default. It can be extended by several classes to allow for additional layouts.</p>
+                    <h2>menu</h2>
                     <ul>
-                        <li>.gMail = 160px</li>
-                        <li>.gCal = 180px</li>
-                        <li>.yahoo = 240px</li>
-                        <li>.myYahoo = 300px</li>
+                        <li>#{pageLink "index" /}</li>
+                        <li>#{pageLink "another_page" /}</li>
+                        <li><a href="@{PageController.pagestag("azerty")}">tag azerty</a></li>
+                        <li><a href="/crud/">admin</a></li>
                     </ul>
                 </div>
                 <div class="rightCol">
-                    <h2>Right Column</h2>
-                    <p>The right column is by default 300px wide. It can be extended via all the same classes that are available to right column.</p>
-                    <ul>
-                        <li>.gMail = 160px</li>
-                        <li>.gCal = 180px</li>
-                        <li>.yahoo = 240px</li>
-                        <li>.myYahoo = 300px</li>
-                    </ul>
+                    <h2>Access</h2>
+                    <p>login : azerty</p>
+                    <p>pass : azerty</p>
                 </div>
                 <div class="main">
-                    <h2>Main Content</h2>
-                    <p>Main Content is fully liquid. It takes all the remaining space on the line after the widths of “leftCol” and “rightCol” are taken into account. Alternatively, grids can be used to break up the main content area for fully fluid layouts.</p>
+                    #{doLayout /}
                 </div>
             </div>
             <div class="foot">
@@ -55,35 +48,3 @@
         </div>
     </body>
 </html>
-
-
-
-
-
-
-
-
-<!DOCTYPE html>
-
-<html>
-    <head>
-        <title>#{get 'title' /}</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-            <link rel="stylesheet" type="text/css" media="screen" href="@{'/public/stylesheets/main.css'}">
-                #{get 'moreStyles' /}
-                <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
-                    <script src="@{'/public/javascripts/jquery-1.4.2.min.js'}" type="text/javascript" charset="utf-8"></script>
-                    #{get 'moreScripts' /}
-                    </head>
-                    <body>
-                        <div>
-                            <ul>
-                                <li>#{pageLink "index" /}</li>
-                                <li>#{pageLink "another_page" /}</li>
-                                <li><a href="@{PageController.pagestag("azerty")}">tag azerty</a></li>
-                                <li><a href="/crud/">admin</a></li>
-                            </ul>
-                        </div>
-                        #{doLayout /}
-                    </body>
-                    </html>
