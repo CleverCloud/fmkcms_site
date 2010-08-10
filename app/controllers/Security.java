@@ -15,7 +15,7 @@ public class Security extends Secure.Security {
 
     static boolean authenticate(String username, String password) {
         if (username.equals("azerty") && password.equals("azerty")) {
-            return new SmallUser() != null;
+            return true;
         } else {
             return false;
         }
