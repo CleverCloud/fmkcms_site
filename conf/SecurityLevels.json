@@ -1,6 +1,10 @@
-{
-    "securityLevels":{
-        "MANAGE_PAGE":["CRUD4Pages.*"]
-
-}
-}
+[
+    {
+        name:"MANAGE_PAGE",
+        controllers:["CRUD4Pages.*"]
+    },
+    {
+        name:"READ_PAGE",
+        controllers:["PageController.page"]
+    }
+]
