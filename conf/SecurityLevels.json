@@ -1,9 +1,5 @@
 [
     {
-        name:"MANAGE_PAGE",
-        controllers:["CRUD4Pages.*"]
-    },
-    {
         name:"READ_PAGE",
         controllers:["PageController.*"]
     },
@@ -13,6 +9,10 @@
     },
     {
         name:"ADMIN_CMS",
-        controllers:["AdminCMS.*"]
+        controllers:["AdminCMS.*","CRUD4Pages.*","CRUD4Menus.*"]
+    },
+    {
+        name:"ADMIN_DEV",
+        controllers:["AdminCMS.*","SecureManager.*"]
     }
 ]
