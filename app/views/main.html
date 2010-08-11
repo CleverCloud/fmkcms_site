@@ -36,6 +36,17 @@
                     <h2>Access</h2>
                     <p>login : azerty</p>
                     <p>pass : azerty</p>
+
+                    #{form @PageController.searchPage(),method:'GET' , id:'searchForm', enctype:'multipart/form-data' }
+                    #{field 'q'}
+                    <p>
+                        <label>Find : </label>
+                        <input type="text" id="${field.id}" name="${field.name}" value="${field.value}" class="${field.errorClass}" />
+                            <span class="error">${field.error}</span>
+                    </p>
+                    #{/field}
+                    <input type="submit" value="search"></input>
+                    #{/form}
                 </div>
                 <div class="main">
                     #{doLayout /}

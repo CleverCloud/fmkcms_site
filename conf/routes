@@ -18,4 +18,4 @@ GET     /public/                                staticDir:public
 *      /crud              module:crud
 *      /                module:secure
 *      /                module:fmkcms
-*       /{controller}/{action}                  {controller}.{action}
+*      /{controller}/{action}                  {controller}.{action}
