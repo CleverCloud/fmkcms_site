@@ -1,0 +1,23 @@
+#{field 'object.' + _name}
+<label for="${field.id}">
+    &{_name}
+</label>
+<select id="${field.id}" name="${field.id}">
+    %{
+    java.util.List<String> ll = new java.util.ArrayList<String>();
+    Iterator<java.util.Locale> its = java.util.Arrays.asList(java.util.Locale.getAvailableLocales()).iterator();
+    while(its.hasNext()){
+        ll.add(its.next().toString());
+    }
+    java.util.Collections.sort(ll);
+    }%
+
+    #{list items:ll, as:'l'}
+        <option value="${l}" ${_value?.toString().equals(l) || (_value == null && request.acceptLanguage().get(0)?.substring(0, 2).equals(l.toString()))? 'selected="true"'.raw() : ''}>${l}</option>
+    #{/list}
+</select>
+
+#{ifError field.name}
+<span class="error">${field.error}</span>
+#{/ifError}
+#{/field}
