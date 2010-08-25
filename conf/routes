@@ -15,7 +15,7 @@ GET     /public/                                staticDir:public
 
 # Catch all
 
-*      /crud              module:crud
+*      /crud            module:crud
 *      /                module:secure
 *      /                module:fmkcms
 *      /{controller}/{action}                  {controller}.{action}
