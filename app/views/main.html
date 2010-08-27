@@ -30,7 +30,16 @@
                         <li>#{pageLink "another_page" /}</li>
                         <li><a href="@{PageController.pagestag("azerty")}">tag azerty</a></li>
                         <li><a href="/crud/">admin</a></li>
+                        <li><a href="@{AdminCMS.index()}">real admin</a></li>
                     </ul>
+
+                    <hr />
+                    <ul>
+                        #{list models.PageRef.all().fetch(), as:'pr'}
+                        <li>#{pageLink pr.urlId /}</li>
+                        #{/list}
+                    </ul>
+
                 </div>
                 <div class="rightCol">
                     <h2>Access</h2>
@@ -42,7 +51,7 @@
                     <p>
                         <label>Find : </label>
                         <input type="text" id="${field.id}" name="${field.name}" value="${field.value}" class="${field.errorClass}"> </input>
-                            <span class="error">${field.error}</span>
+                        <span class="error">${field.error}</span>
                     </p>
                     #{/field}
                     <input type="submit" value="search"></input>
