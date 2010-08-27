@@ -13,7 +13,7 @@ import play.mvc.Controller;
 public class RolesManagement extends Controller {
 
     public static Boolean haveRole(String role) {
-        return Security.isConnected();
+        return true;
     }
 
     
