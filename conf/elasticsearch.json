@@ -1,0 +1,45 @@
+
+
+
+{
+    
+    
+    "cluster" : 
+    
+    {
+        
+        
+        "name" : "fmkcms"
+    
+    
+    },
+    
+    
+	"discovery":
+    {
+        
+    	"zen":
+        {
+            
+            "ping":
+            {
+                
+                "multicast":
+                {
+                    "enabled":false
+
+                
+                }
+                
+            
+            }
+            
+
+        }
+        
+
+    }
+    
+
+            
+}
