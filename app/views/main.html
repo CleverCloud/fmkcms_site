@@ -34,13 +34,13 @@
                     </ul>
 
                     <hr />
-                    %{try {}%
+                    %{if (mongo.MongoEntity.getDs().find(models.PageRef.class).asList().size() > 0) {}%
                     <ul>
                         #{list mongo.MongoEntity.getDs().find(models.PageRef.class), as:'pr'}
                         <li>#{pageLink pr.urlId /}</li>
                         #{/list}
                     </ul>
-                    %{} catch (MongoInternalException) {}%
+                    %{} else {}%
                     No page to list.
                     %{}}%
 
