@@ -9,10 +9,10 @@
     },
     {
         name:"ADMIN_CMS",
-        controllers:["AdminCMS.*"]
+        controllers:[]
     },
     {
         name:"ADMIN_DEV",
-        controllers:["AdminCMS.*","SecureManager.*"]
+        controllers:["SecureManager.*"]
     }
 ]
