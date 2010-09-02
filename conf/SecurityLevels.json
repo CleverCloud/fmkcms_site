@@ -9,7 +9,7 @@
     },
     {
         name:"ADMIN_CMS",
-        controllers:["AdminCMS.*","CRUD4Pages.*","CRUD4Menus.*", "CRUD4MenuEntryPages.*"]
+        controllers:["AdminCMS.*"]
     },
     {
         name:"ADMIN_DEV",
