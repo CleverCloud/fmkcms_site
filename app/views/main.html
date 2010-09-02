@@ -34,11 +34,15 @@
                     </ul>
 
                     <hr />
+                    %{try {}%
                     <ul>
-                        #{list models.PageRef.all().fetch(), as:'pr'}
+                        #{list mongo.MongoEntity.getDs().find(models.PageRef.class), as:'pr'}
                         <li>#{pageLink pr.urlId /}</li>
                         #{/list}
                     </ul>
+                    %{} catch (MongoInternalException) {}%
+                    No page to list.
+                    %{}}%
 
                 </div>
                 <div class="rightCol">
