@@ -32,10 +32,10 @@
                     </ul>
 
                     <hr />
-                    %{if (mongo.MongoEntity.getDs().find(models.PageRef.class).asList().size() > 0) {}%
+                    %{if (mongo.MongoEntity.getDs().find(models.Page.class).asList().size() > 0) {}%
                     <ul>
-                        #{list mongo.MongoEntity.getDs().find(models.PageRef.class), as:'pr'}
-                        <li>#{pageLink pr.urlId /}</li>
+                        #{list mongo.MongoEntity.getDs().find(models.Page.class), as:'p'}
+                        <li>#{pageLink p.urlId /}</li>
                         #{/list}
                     </ul>
                     %{} else {}%
