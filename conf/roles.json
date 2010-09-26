@@ -1,6 +1,0 @@
-
-[
-    {name:"*",rights_names:["READ_PAGE","APPLICATION_SITE"]},
-    {name:"admin",rights_names:["ADMIN_DEV","ADMIN_CMS"]}
-]
-
