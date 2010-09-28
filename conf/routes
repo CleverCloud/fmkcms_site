@@ -3,7 +3,7 @@
 # ~~~~
 
 # Home page
-GET     /                                       PageController.page(urlId:'index')
+GET     /                                       PageViewer.page(urlId:'index')
 
 GET     /public/                                staticDir:public
 
