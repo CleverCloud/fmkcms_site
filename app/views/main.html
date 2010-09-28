@@ -28,7 +28,7 @@
                     <ul>
                         <li>#{pageLink "index" /}</li>
                         <li>#{pageLink "another_page" /}</li>
-                        <li><a href="@{PageController.pagestag("azerty")}">tag azerty</a></li>
+                        <li><a href="@{PageViewer.pagestag("azerty")}">tag azerty</a></li>
                     </ul>
 
                     <hr />
@@ -48,7 +48,7 @@
                     <p>login : azerty</p>
                     <p>pass : azerty</p>
 
-                    #{form @PageController.searchPage(),method:'GET' , id:'searchForm', enctype:'multipart/form-data' }
+                    #{form @PageViewer.searchPage(),method:'GET' , id:'searchForm', enctype:'multipart/form-data' }
                     #{field 'q'}
                     <p>
                         <label>Find : </label>
