@@ -26,6 +26,9 @@
                 <div class="leftCol">
                     <h2>menu</h2>
                     <ul>
+                        <li><a href="@{PageController.newPage()}">New page</a></li>
+                        <li><a href="@{BlogViewer.index()}">Blog</a></li>
+                        <li><a href="@{BlogController.newPost()}">New blog post</a></li>
                         <li>#{pageLink "index" /}</li>
                         <li>#{pageLink "another_page" /}</li>
                         <li><a href="@{PageViewer.pagestag("azerty")}">tag azerty</a></li>
