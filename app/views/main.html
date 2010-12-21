@@ -33,7 +33,7 @@
                         <li>#{pageLink "another_page" /}</li>
                         <li><a href="@{PageViewer.pagestag("azerty")}">tag azerty</a></li>
                     </ul>
-
+                    
                     <hr />
                     %{if (mongo.MongoEntity.getDs().find(models.Page.class).asList().size() > 0) {}%
                     <ul>
@@ -51,8 +51,8 @@
                     <p>login : azerty</p>
                     <p>pass : azerty</p>
 
-                    #{form @PageViewer.searchPage(),method:'GET' , id:'searchForm', enctype:'multipart/form-data' }
-                    #{field 'q'}
+                    #{form @SearchViewer.search(),method:'GET' , id:'searchForm', enctype:'multipart/form-data' }
+                    #{field 'query'}
                     <p>
                         <label>Find : </label>
                         <input type="text" id="${field.id}" name="${field.name}" value="${field.value}" class="${field.errorClass}"> </input>
